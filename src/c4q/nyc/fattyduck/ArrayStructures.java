@@ -63,17 +63,34 @@ public class ArrayStructures
         }
     }
 
+    public void linearsearch(int value){
+        boolean hasValue = false;
+        String index = "";
+        System.out.println("The value is found in following index(s):");
+
+        for(int i = 0; i<arraySize; i++){
+            if(theArray[i]==value){
+                hasValue=true;
+                System.out.println(i + " ");
+            }
+        }
+        if(!hasValue){
+            System.out.println("None");
+        }
+
+
+    }
+
     public static void main(String[] args){
         ArrayStructures cow = new ArrayStructures();
         cow.generateRandomArray();
         cow.printArray();
         cow.getValueAtIndex(4);
         System.out.println(cow.doesArrayContainValue(10));
-        cow.deleteIndex(5);
         cow.printArray();
         cow.insertValue(15);
         cow.printArray();
-
+        cow.linearsearch(15);
     }
 
 }
