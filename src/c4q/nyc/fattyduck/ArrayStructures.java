@@ -54,6 +54,15 @@ public class ArrayStructures
         }
     }
 
+    public void insertValue(int value){
+        if(arraySize<50)
+        {
+            theArray[arraySize] = value;
+
+            arraySize++;
+        }
+    }
+
     public static void main(String[] args){
         ArrayStructures cow = new ArrayStructures();
         cow.generateRandomArray();
@@ -62,6 +71,9 @@ public class ArrayStructures
         System.out.println(cow.doesArrayContainValue(10));
         cow.deleteIndex(5);
         cow.printArray();
+        cow.insertValue(15);
+        cow.printArray();
+
     }
 
 }
