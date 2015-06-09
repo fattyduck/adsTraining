@@ -78,7 +78,10 @@ public class ArrayStructures
             System.out.println("None");
         }
 
+    }
 
+    public void bubbleSort(){
+        
     }
 
     public static void main(String[] args){
