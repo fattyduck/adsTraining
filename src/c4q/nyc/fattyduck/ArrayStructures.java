@@ -80,10 +80,6 @@ public class ArrayStructures
 
     }
 
-    public void bubbleSort(){
-        
-    }
-
     public static void main(String[] args){
         ArrayStructures cow = new ArrayStructures();
         cow.generateRandomArray();
